@@ -29,10 +29,12 @@ public class Postagem {
 	
 	@NotNull
 	@Size(min = 10, max = 500)
-	private String texo;
+	private String texto;
 	
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date date = new java.sql.Date(System.currentTimeMillis());
+	
+	
 
 	public long getId() {
 		return id;
@@ -50,12 +52,12 @@ public class Postagem {
 		this.titulo = titulo;
 	}
 
-	public String getTexo() {
-		return texo;
+	public String getTexto() {
+		return texto;
 	}
 
-	public void setTexo(String texo) {
-		this.texo = texo;
+	public void setTexto(String texto) {
+		this.texto = texto;
 	}
 
 	public Date getDate() {
